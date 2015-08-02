@@ -11,7 +11,7 @@
 #pragma comment(lib,"dsound.lib")
 #pragma comment(lib,"strmiids.lib")
 
-#pragma comment(lib,"..\\..\\bin\\RenderSetup.lib")
+//#pragma comment(lib,"..\\..\\bin\\RenderSetup.lib")
 
 #define DIRECTINPUT_VERSION 0x0800
 #include <string>

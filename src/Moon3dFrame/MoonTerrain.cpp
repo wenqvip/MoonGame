@@ -125,7 +125,7 @@ bool MoonTerrain::readRawFile(string filename)
 	vector<BYTE> in ( _numVertices );
 	ifstream inFile(filename.c_str(), ios_base::binary);
 
-	if( inFile == 0 )
+	if( inFile.eof() )
 	{
 		LogWarning("MoonTerrain::readRawFile() donot find the raw file!");
 		return false;

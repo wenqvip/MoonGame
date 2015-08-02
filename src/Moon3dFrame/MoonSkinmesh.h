@@ -39,13 +39,18 @@ class AllocateHierarchy: public ID3DXAllocateHierarchy
 {
 public:
     STDMETHOD(CreateFrame)(THIS_ LPCTSTR Name, LPD3DXFRAME *ppNewFrame);
-    STDMETHOD(CreateMeshContainer)(THIS_ LPCTSTR Name, LPD3DXMESHDATA pMeshData,
-                            LPD3DXMATERIAL pMaterials, LPD3DXEFFECTINSTANCE pEffectInstances, DWORD NumMaterials, 
-                            DWORD *pAdjacency, LPD3DXSKININFO pSkinInfo, 
-                            LPD3DXMESHCONTAINER *ppNewMeshContainer);
     STDMETHOD(DestroyFrame)(THIS_ LPD3DXFRAME pFrameToFree);
     STDMETHOD(DestroyMeshContainer)(THIS_ LPD3DXMESHCONTAINER pMeshContainerBase);
     AllocateHierarchy(MoonSkinmesh* pSkinmesh) :_pSkinmesh(pSkinmesh) {}
+	STDMETHOD(CreateMeshContainer)(THIS_
+		LPCSTR Name,
+		CONST D3DXMESHDATA *pMeshData,
+		CONST D3DXMATERIAL *pMaterials,
+		CONST D3DXEFFECTINSTANCE *pEffectInstances,
+		DWORD NumMaterials,
+		CONST DWORD *pAdjacency,
+		LPD3DXSKININFO pSkinInfo,
+		LPD3DXMESHCONTAINER *ppNewMeshContainer);
 
 public:
     MoonSkinmesh* _pSkinmesh;

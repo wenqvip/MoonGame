@@ -58,10 +58,15 @@ e_Exit:
     return hr;
 }
 
-HRESULT AllocateHierarchy::CreateMeshContainer(LPCTSTR Name, LPD3DXMESHDATA pMeshData,
-								LPD3DXMATERIAL pMaterials, LPD3DXEFFECTINSTANCE pEffectInstances,
-								DWORD NumMaterials, DWORD *pAdjacency, LPD3DXSKININFO pSkinInfo,
-								LPD3DXMESHCONTAINER *ppNewMeshContainer)
+HRESULT AllocateHierarchy::CreateMeshContainer(
+	LPCSTR Name,
+	CONST D3DXMESHDATA *pMeshData,
+	CONST D3DXMATERIAL *pMaterials,
+	CONST D3DXEFFECTINSTANCE *pEffectInstances,
+	DWORD NumMaterials,
+	CONST DWORD *pAdjacency,
+	LPD3DXSKININFO pSkinInfo,
+	LPD3DXMESHCONTAINER *ppNewMeshContainer)
 {
     HRESULT hr;
     D3DXMESHCONTAINER_DERIVED *pMeshContainer = NULL;
@@ -585,7 +590,7 @@ bool MoonSkinmesh::SetAnimByName(const char *strAnimName)
 		{
 			/*_currentTrack++;*/
 			_pAnimController->SetTrackAnimationSet(0,pAnimSet);
-			_pAnimController->SetTime(0);
+			_pAnimController->ResetTime();
 			/*_pAnimController->SetTrackEnable((_currentTrack+1)%2, FALSE);
 			_pAnimController->SetTrackEnable(_currentTrack%2, TRUE);*/
 			return true;
@@ -598,7 +603,7 @@ void MoonSkinmesh::FrameMove(float ftime, D3DXMATRIX matWorld)
 {
     if (_pAnimController != NULL)
 	{
-        _pAnimController->SetTime(_pAnimController->GetTime() + ftime);
+		_pAnimController->AdvanceTime(ftime, NULL);
 	}
 	UpdateFrameMatrices(_pFrameRoot, &matWorld);
 }

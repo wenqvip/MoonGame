@@ -6,20 +6,11 @@ MoonFont::MoonFont(LPDIRECT3DDEVICE9 pD3DDevice, LPSTR pFontFace, int nHeight,
 	m_pD3DDevice = pD3DDevice;
 	
 	int nWeight = FW_NORMAL;
-	DWORD dwItalic = 0;
-	DWORD dwUnderlined = 0;
 
 	if(fBold)
 		nWeight = FW_BOLD;
-	if(fItalic)
-		dwItalic = 1;
-	if(fUnderlined)
-		dwUnderlined = 1;
-
-	HFONT hFont = CreateFontA(nHeight, 0, 0, 0, nWeight, dwItalic, dwUnderlined, 0,
-		ANSI_CHARSET, 0, 0, 0, 0, pFontFace);
 	
-	D3DXCreateFont(m_pD3DDevice, hFont, &m_pFont);
+	D3DXCreateFont(m_pD3DDevice, nHeight, nHeight / 2, nWeight, 0, fItalic, DEFAULT_CHARSET, 0, 0, 0, "Arial", &m_pFont);
 }
 
 MoonFont::~MoonFont(void)
@@ -36,15 +27,15 @@ void MoonFont::DrawTextx(LPSTR pText, int x, int y, D3DCOLOR rgbFontColour, DWOR
 	rect.right = 0;
 	rect.bottom = 0;
 	//Calculate the size of the rect needed
-	m_pFont->DrawText(pText, -1, &rect, DT_CALCRECT, 0);
+	m_pFont->DrawText(NULL, pText, -1, &rect, DT_CALCRECT, 0);
 	//Draw the text
-	m_pFont->DrawText(pText, -1, &rect, format, rgbFontColour);
+	m_pFont->DrawText(NULL, pText, -1, &rect, format, rgbFontColour);
 }
 
 void MoonFont::DrawTextx(LPSTR pText, RECT rect, D3DCOLOR rgbFontColour, DWORD format)
 {
 	//Calculate the size of the rect needed
-	m_pFont->DrawText(pText, -1, &rect, DT_CALCRECT|format, 0);
+	m_pFont->DrawText(NULL, pText, -1, &rect, DT_CALCRECT | format, 0);
 	//Draw the text
-	m_pFont->DrawText(pText, -1, &rect, format, rgbFontColour);
+	m_pFont->DrawText(NULL, pText, -1, &rect, format, rgbFontColour);
 }
