@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cuboid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Moon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Moon3DFont.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonAABBbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonApp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonBlock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonCamera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonCharacter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonChildApp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonCollision.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonFirework.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonFont.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonParticle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonRain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonScene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonSkinmesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonSky.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonSnow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonSoundManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonSystemLog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonTerrain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonTimer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonUIButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonUIObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonUIPanel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonUIStaticText.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonUtility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MoonWater.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cuboid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Moon3DFont.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonAABBbox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonApp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonBlock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonCamera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonCharacter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonChildApp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonCollision.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonFirework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonFont.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonParticle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonRain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonScene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonSkinmesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonSky.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonSnow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonSoundManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonSystemLog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonTerrain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonTimer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonUIButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonUIObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonUIPanel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonUIStaticText.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoonWater.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Moon3dFrame.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="normal.ani" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Moon3dFrame.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+Moon 3D log
+Created(or opened) on 13/06/2010 09:48:31
+
+[09:48:31] MoonApp::Create(): Window is Created.
+[09:48:31] MoonApp::InitializeDirectinput() DirectInput interface created OK
+[09:48:31] MoonApp::InitializeDirectinput() DirectInput keyboard device interface created OK.
+[09:48:31] MoonApp::InitializeDirectinput() Set the keyboard data format OK.
+[09:48:31] MoonApp::InitializeDirectinput() Set the keyboard cooperative level OK.
+[09:48:31] MoonApp::InitializeDirectinput() DirectInput mouse device interface created OK.
+[09:48:31] MoonApp::InitializeDirectinput() Set the mouse data format OK.
+[09:48:31] MoonApp::InitializeDirectinput() Set the mouse cooperative level OK.
+[09:48:32] MoonApp::Initialize3DEnvironment() Create D3D device OK.
+[09:48:32] ChildMoonApp::InitDeviceObjects() Create Moon3DFont OK!
+[09:48:32] ChildMoonApp::RestoreDeviceObjects() Set projection OK!

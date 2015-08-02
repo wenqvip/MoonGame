@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1C3429F8-1934-4160-9A92-63F2B5FAC2F2}</ProjectGuid>
+    <RootNamespace>Moon3dFrame</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(SolutionDir)..\bin\MoonEngineD.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(SolutionDir)..\bin\MoonEngine.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Cuboid.cpp" />
+    <ClCompile Include="Moon.cpp" />
+    <ClCompile Include="Moon3DFont.cpp" />
+    <ClCompile Include="MoonAABBbox.cpp" />
+    <ClCompile Include="MoonApp.cpp" />
+    <ClCompile Include="MoonBlock.cpp" />
+    <ClCompile Include="MoonCamera.cpp" />
+    <ClCompile Include="MoonCharacter.cpp" />
+    <ClCompile Include="MoonChildApp.cpp" />
+    <ClCompile Include="MoonCollision.cpp" />
+    <ClCompile Include="MoonFirework.cpp" />
+    <ClCompile Include="MoonFont.cpp" />
+    <ClCompile Include="MoonObject.cpp" />
+    <ClCompile Include="MoonParticle.cpp" />
+    <ClCompile Include="MoonRain.cpp" />
+    <ClCompile Include="MoonScene.cpp" />
+    <ClCompile Include="MoonSetting.cpp" />
+    <ClCompile Include="MoonSkinmesh.cpp" />
+    <ClCompile Include="MoonSky.cpp" />
+    <ClCompile Include="MoonSnow.cpp" />
+    <ClCompile Include="MoonSoundManager.cpp" />
+    <ClCompile Include="MoonSystemLog.cpp" />
+    <ClCompile Include="MoonTerrain.cpp" />
+    <ClCompile Include="MoonTimer.cpp" />
+    <ClCompile Include="MoonUIButton.cpp" />
+    <ClCompile Include="MoonUIObject.cpp" />
+    <ClCompile Include="MoonUIPanel.cpp" />
+    <ClCompile Include="MoonUIStaticText.cpp" />
+    <ClCompile Include="MoonUtility.cpp" />
+    <ClCompile Include="MoonWater.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cuboid.h" />
+    <ClInclude Include="Moon3DFont.h" />
+    <ClInclude Include="MoonAABBbox.h" />
+    <ClInclude Include="MoonApp.h" />
+    <ClInclude Include="MoonBlock.h" />
+    <ClInclude Include="MoonCamera.h" />
+    <ClInclude Include="MoonCharacter.h" />
+    <ClInclude Include="MoonChildApp.h" />
+    <ClInclude Include="MoonCollision.h" />
+    <ClInclude Include="MoonFirework.h" />
+    <ClInclude Include="MoonFont.h" />
+    <ClInclude Include="MoonObject.h" />
+    <ClInclude Include="MoonParticle.h" />
+    <ClInclude Include="MoonRain.h" />
+    <ClInclude Include="MoonScene.h" />
+    <ClInclude Include="MoonSetting.h" />
+    <ClInclude Include="MoonSkinmesh.h" />
+    <ClInclude Include="MoonSky.h" />
+    <ClInclude Include="MoonSnow.h" />
+    <ClInclude Include="MoonSoundManager.h" />
+    <ClInclude Include="MoonSystemLog.h" />
+    <ClInclude Include="MoonTerrain.h" />
+    <ClInclude Include="MoonTimer.h" />
+    <ClInclude Include="MoonUIButton.h" />
+    <ClInclude Include="MoonUIObject.h" />
+    <ClInclude Include="MoonUIPanel.h" />
+    <ClInclude Include="MoonUIStaticText.h" />
+    <ClInclude Include="MoonUtility.h" />
+    <ClInclude Include="MoonWater.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Moon3dFrame.ico" />
+    <None Include="normal.ani" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Moon3dFrame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RenderSetup\RenderSetup.vcxproj">
+      <Project>{e9b3b905-727a-471b-bb71-23694cc88e8f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Moon3dFrame.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

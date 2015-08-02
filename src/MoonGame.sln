@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Moon3dFrame", "Moon3dFrame\Moon3dFrame.vcxproj", "{1C3429F8-1934-4160-9A92-63F2B5FAC2F2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RenderSetup", "RenderSetup\RenderSetup.vcxproj", "{E9B3B905-727A-471B-BB71-23694CC88E8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C3429F8-1934-4160-9A92-63F2B5FAC2F2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C3429F8-1934-4160-9A92-63F2B5FAC2F2}.Debug|Win32.Build.0 = Debug|Win32
+		{1C3429F8-1934-4160-9A92-63F2B5FAC2F2}.Release|Win32.ActiveCfg = Release|Win32
+		{1C3429F8-1934-4160-9A92-63F2B5FAC2F2}.Release|Win32.Build.0 = Release|Win32
+		{E9B3B905-727A-471B-BB71-23694CC88E8F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E9B3B905-727A-471B-BB71-23694CC88E8F}.Debug|Win32.Build.0 = Debug|Win32
+		{E9B3B905-727A-471B-BB71-23694CC88E8F}.Release|Win32.ActiveCfg = Release|Win32
+		{E9B3B905-727A-471B-BB71-23694CC88E8F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

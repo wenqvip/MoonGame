@@ -1,0 +1,41 @@
+; 注意所有的宽度，高度，以及位置全是按照比例来算的。
+[panel]
+bfullwindow=true
+; 如果bfullwindow是false的话则必须有以下两个参数
+; width=0.6
+; height=0.6
+; position=(0.2,0.2,0)
+background=unrealworld.jpg
+controlnum=4
+
+[control000]
+type=statictext
+width=0.6
+height=0.4
+position=(0.2,0.1,0)
+caption=欢迎来到虚幻世界！虚幻世界基于Moon3D，我曾想把它做成3D引擎，后来发现太难了。
+action=static
+
+[control001]
+type=button
+width=0.15
+height=0.05
+position=(0.2,0.7,0)
+caption=开始旅行
+action=ok
+
+[control002]
+type=button
+width=0.15
+height=0.05
+position=(0.42,0.7,0)
+caption=关于虚幻世界
+action=about
+
+[control003]
+type=button
+width=0.15
+height=0.05
+position=(0.64,0.7,0)
+caption=退出
+action=exit
